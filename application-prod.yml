@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+spring.datasource:
+  url: jdbc:mariadb://localhost:3306/cmsrevampdb
+  username: root
+  password: root
+  driver-class-name: org.mariadb.jdbc.Driver
+spring.jpa:
+  database-platform: org.hibernate.dialect.MySQLDialect
+logging:
+  file: /var/logs/documents-api.log
+  pattern:
+    console: '%d %-5level %logger : %msg%n'
+    file: '%d %-5level [%thread] %logger : %msg%n'
+  level:
+    org.springframework.web: debug
+    com.cms: debug
