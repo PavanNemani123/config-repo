@@ -11,8 +11,6 @@ spring.datasource:
 spring:
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: create-drop
 # Logging configuration
 logging:
   file: /var/logs/documents-api.log
